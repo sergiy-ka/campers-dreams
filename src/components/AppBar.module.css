@@ -1,0 +1,23 @@
+.appBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #546078;
+  color: white;
+}
+
+nav {
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
