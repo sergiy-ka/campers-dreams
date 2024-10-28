@@ -1,0 +1,195 @@
+.catalogPage {
+  min-height: calc(100vh - 80px);
+  padding: 24px;
+  background-color: var(--background-color);
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 24px;
+}
+
+.sidebar {
+  top: 24px;
+  height: fit-content;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background: #ffffff;
+  border-radius: 12px;
+}
+
+.results {
+  font-size: 16px;
+  color: #475467;
+}
+
+.viewToggle {
+  display: flex;
+  gap: 8px;
+}
+
+@media (max-width: 768px) {
+  .viewToggle {
+    display: none;
+  }
+}
+
+.viewButton {
+  padding: 8px;
+  background: none;
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.viewButton svg {
+  color: #475467;
+}
+
+.viewButton.active {
+  background: var(--button);
+  border-color: var(--button);
+}
+
+.viewButton.active svg {
+  color: #ffffff;
+}
+
+.campersGrid {
+  display: grid;
+  gap: 24px;
+}
+
+.campersGrid.grid {
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+}
+
+.campersGrid.list {
+  grid-template-columns: 1fr;
+}
+
+.loader {
+  text-align: center;
+  padding: 48px;
+  color: #475467;
+}
+
+.spinnerWrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #121417;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loadMoreButton {
+  color: var(--main);
+  border: none;
+  cursor: pointer;
+  transition: border 0.2s ease;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.08px;
+  display: flex;
+  padding: 16px 60px;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  border-radius: 200px;
+  background: #ffffff;
+  border: 1px solid var(--Gray-light, #dadde1);
+  margin: 0 auto;
+}
+
+.loadMoreButton:hover {
+  border: 1px solid var(--button-hover);
+}
+
+.noResults {
+  padding: 64px;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 12px;
+}
+
+.noResultsContent {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.noResultsContent svg {
+  color: #475467;
+  margin-bottom: 16px;
+}
+
+.noResultsContent h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #121417;
+  margin-bottom: 8px;
+}
+
+.noResultsContent p {
+  color: #475467;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    position: static;
+  }
+
+  .campersGrid.grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .campersGrid.grid {
+    grid-template-columns: 1fr;
+  }
+
+  .toolbar {
+    flex-direction: column;
+    gap: 16px;
+  }
+}

@@ -1,0 +1,231 @@
+.filterBar {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.section p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  color: var(--text-color);
+}
+
+.label {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  color: var(--main);
+}
+
+.location {
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 8px 16px;
+}
+
+.input {
+  font-size: 16px;
+  outline: none;
+  border: none;
+  transition: border-color 0.2s ease;
+}
+
+.input:focus {
+  border-color: #121417;
+}
+
+.vehicleTypes,
+.vehicleTransmissions,
+.vehicleEngines {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.typeButton,
+.transmissionButton,
+.engineButton {
+  padding: 8px 16px;
+  border: 1px solid var(--Gray-light, #dadde1);
+  border-radius: 10px;
+  background: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+  mix-blend-mode: multiply;
+  width: 85px;
+  height: 85px;
+}
+
+.typeButton.active,
+.transmissionButton.active,
+.engineButton.active {
+  color: var(--primary-color);
+  border-color: var(--button);
+}
+
+.vehicleFeatures {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.featureButton {
+  padding: 8px 16px;
+  border: 1px solid var(--Gray-light, #dadde1);
+  border-radius: 10px;
+  background: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+  mix-blend-mode: multiply;
+  width: 85px;
+  height: 85px;
+}
+
+.featureButton.active {
+  color: var(--primary-color);
+  border-color: var(--button);
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  color: #101828;
+}
+
+.icon20 {
+  width: 20px;
+  height: 20px;
+  color: #101828;
+}
+
+.actions {
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.select {
+  border-radius: 10px;
+  border: 1px solid var(--Gray-light, #dadde1);
+  outline: none;
+  color: var(--main);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 14px;
+}
+
+.select:has(option:checked:not([value=""])) {
+  border: 1px solid var(--button);
+}
+
+.searchButton {
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.08px;
+  display: flex;
+  padding: 16px 60px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 200px;
+  background: var(--button);
+}
+
+.searchButton:hover {
+  background: var(--button-hover);
+}
+
+.resetButton {
+  color: var(--main);
+  border: none;
+  cursor: pointer;
+  transition: border 0.2s ease;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.08px;
+  display: flex;
+  padding: 16px 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 200px;
+  background: #ffffff;
+  border: 1px solid var(--Gray-light, #dadde1);
+}
+
+.resetButton:hover {
+  border: 1px solid var(--button-hover);
+}
+
+.loadMoreButton {
+  color: var(--main);
+  border: none;
+  cursor: pointer;
+  transition: border 0.2s ease;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.08px;
+  display: flex;
+  padding: 16px 60px;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  border-radius: 200px;
+  background: #ffffff;
+  border: 1px solid var(--Gray-light, #dadde1);
+  margin: 0 auto;
+}
+
+.applyButton {
+  flex: 1;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background: #121417;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.applyButton:hover {
+  background: #2a2a2a;
+}

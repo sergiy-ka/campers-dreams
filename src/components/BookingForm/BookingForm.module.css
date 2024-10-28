@@ -1,0 +1,117 @@
+.form {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 24px;
+}
+
+.title {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  color: var(--Main, #101828);
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--Gray, #6c717b);
+  margin-bottom: 24px;
+}
+
+.priceInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background: #f7f7f7;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: 600;
+  color: #121417;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.field label {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--Gray, #6c717b);
+}
+
+.field input {
+  height: 60px;
+}
+
+.field input,
+.field textarea {
+  padding: 18px;
+  border: none;
+  border-radius: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  outline: none;
+  background: var(--Inputs, #f7f7f7);
+  width: 100%;
+  font-size: 16px;
+}
+
+.submitButton {
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.08px;
+  display: flex;
+  padding: 16px 60px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 200px;
+  background: var(--button);
+  margin: 0 auto;
+  margin-top: 24px;
+}
+
+.submitButton:hover {
+  background: var(--button-hover);
+}
+
+.success {
+  margin-top: 16px;
+  padding: 12px;
+  background: #4caf50;
+  color: #ffffff;
+  border-radius: 8px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
