@@ -41,7 +41,11 @@ const FilterBar = ({ onFilterApply }) => {
 
       <div className={styles.section}>
         <p>Filters</p>
+      </div>
+
+      <div className={styles.section}>
         <label className={styles.label}>Vehicle equipment</label>
+        <div className={styles.tabs}></div>
         <div className={styles.vehicleFeatures}>
           {VEHICLE_FEATURES.map((feature) => (
             <button
@@ -73,9 +77,6 @@ const FilterBar = ({ onFilterApply }) => {
               </option>
             ))}
           </select>
-        </div>
-
-        <div className={styles.section}>
           <select
             className={styles.select}
             value={filters.vehicleEngine}
@@ -92,6 +93,7 @@ const FilterBar = ({ onFilterApply }) => {
 
         <div className={styles.section}>
           <label className={styles.label}>Vehicle type</label>
+          <div className={styles.tabs}></div>
           <div className={styles.vehicleTypes}>
             {VEHICLE_TYPES.map((type) => (
               <button
