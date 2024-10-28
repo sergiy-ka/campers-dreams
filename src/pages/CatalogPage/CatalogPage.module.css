@@ -197,3 +197,34 @@
     gap: 16px;
   }
 }
+
+@media (max-width: 375px) {
+  .card {
+    min-width: 280px;
+    max-width: 100%;
+  }
+
+  .imageWrapper {
+    height: 180px;
+  }
+
+  .content {
+    padding: 6px;
+  }
+
+  .toolbar {
+    padding: 4px;
+    gap: 10px;
+    min-width: 280px;
+    max-width: 100%;
+  }
+
+  .viewButton {
+    padding: 5px;
+  }
+
+  .viewButton svg {
+    width: 18px;
+    height: 18px;
+  }
+}
