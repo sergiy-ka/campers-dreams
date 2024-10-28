@@ -1,5 +1,5 @@
 .homePage {
-  min-height: calc(100vh - 0px);
+  min-height: calc(100vh - 57px);
   background-image: image-set(
     url("/src/assets/img/hero/hero.jpg") 1x,
     url("/src/assets/img/hero/hero.jpg") 2x
