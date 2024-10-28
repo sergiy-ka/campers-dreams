@@ -7,10 +7,19 @@
   gap: 16px;
 }
 
+.card.list1 {
+  flex-direction: row;
+}
+
 .imageWrapper {
   position: relative;
   width: 100%;
   height: 300px;
+}
+
+.imageWrapper.list1 {
+  width: 320px;
+  height: 100%;
 }
 
 .image {
@@ -46,6 +55,10 @@
   padding: 12px;
 }
 
+.content.list1 {
+  padding: 0px;
+}
+
 .contentContainer {
   display: flex;
   flex-direction: column;
@@ -53,6 +66,16 @@
   flex: 1;
   justify-content: space-between;
 }
+
+.contentContainer.list1 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex: 1;
+  justify-content: space-between;
+  padding: 24px;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -203,6 +226,11 @@
   margin: 0;
   align-self: center;
   margin-bottom: 12px;
+}
+
+.showMoreButton.list1 {
+  align-self: flex-start;
+  margin-bottom: 0px;
 }
 
 .showMoreButton:hover {

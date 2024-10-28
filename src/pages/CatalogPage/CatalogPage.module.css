@@ -86,6 +86,10 @@
   grid-template-columns: 1fr;
 }
 
+.campersGrid.list1 {
+  grid-template-columns: 1fr;
+}
+
 .loader {
   text-align: center;
   padding: 48px;

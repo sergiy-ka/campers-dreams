@@ -119,7 +119,6 @@ const CatalogPage = () => {
                 aria-label="Grid view"
               >
                 <svg width="24" height="24">
-                  {/* <use href="./src/assets/icons/_sprite.svg#grid_4"></use> */}
                   <use href={getIcon("grid_4")}></use>
                 </svg>
               </button>
@@ -131,8 +130,18 @@ const CatalogPage = () => {
                 aria-label="List view"
               >
                 <svg width="24" height="24">
-                  {/* <use href="./src/assets/icons/_sprite.svg#grid_2" /> */}
                   <use href={getIcon("grid_2")} />
+                </svg>
+              </button>
+              <button
+                className={`${styles.viewButton} ${
+                  viewMode === "list1" ? styles.active : ""
+                }`}
+                onClick={() => toggleViewMode("list1")}
+                aria-label="List view"
+              >
+                <svg width="24" height="24">
+                  <use href={getIcon("list1")} />
                 </svg>
               </button>
             </div>

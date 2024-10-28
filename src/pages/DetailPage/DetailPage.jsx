@@ -44,7 +44,6 @@ const DetailPage = () => {
                   height="16"
                   viewBox="0 0 16 16"
                 >
-                  {/* <use href="../src/assets/icons/_sprite.svg#star" /> */}
                   <use href={getIcon("star")} />
                 </svg>
               </div>
@@ -55,7 +54,6 @@ const DetailPage = () => {
             </div>
 
             <svg width="20" height="20">
-              {/* <use href="../src/assets/icons/_sprite.svg#map" /> */}
               <use href={getIcon("map")} />
             </svg>
             {camper.location}
@@ -108,7 +106,6 @@ const DetailPage = () => {
                         <div key={feature.id} className={styles.feature}>
                           <svg className={styles.icon}>
                             <use
-                              // href={`../src/assets/icons/_sprite.svg#${feature.icon}`}
                               href={getIcon(feature.icon)}
                             />
                           </svg>
@@ -119,11 +116,6 @@ const DetailPage = () => {
                     <div className={styles.transmission}>
                       <svg className={styles.icon}>
                         <use
-                          // href={`../src/assets/icons/_sprite.svg#${
-                          //   VEHICLE_TRANSMISSIONS.find(
-                          //     (e) => e.id === camper.transmission
-                          //   )?.icon || VEHICLE_TRANSMISSIONS[0].icon
-                          // }`}
                           href={getIcon(
                             VEHICLE_TRANSMISSIONS.find(
                               (e) => e.id === camper.transmission
@@ -142,10 +134,6 @@ const DetailPage = () => {
                     <div className={styles.engine}>
                       <svg className={styles.icon}>
                         <use
-                          // href={`../src/assets/icons/_sprite.svg#${
-                          //   VEHICLE_ENGINES.find((e) => e.id === camper.engine)
-                          //     ?.icon || VEHICLE_ENGINES[0].icon
-                          // }`}
                           href={getIcon(
                             VEHICLE_ENGINES.find((e) => e.id === camper.engine)
                               ?.icon || VEHICLE_ENGINES[0].icon

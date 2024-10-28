@@ -4,24 +4,6 @@ export const formatPrice = (price) => {
   return Math.round(price);
 };
 
-// export const createFilterParams = (filters) => {
-//   const params = new URLSearchParams();
-
-//   if (filters.location) {
-//     params.append("location", filters.location);
-//   }
-
-//   if (filters.vehicleType) {
-//     params.append("form", filters.vehicleType.toLowerCase());
-//   }
-
-//   filters.features.forEach((feature) => {
-//     params.append(feature.toLowerCase(), "true");
-//   });
-
-//   return params;
-// };
-
 export const debounce = (func, wait) => {
   let timeout;
 

@@ -56,7 +56,6 @@ const FilterBar = ({ onFilterApply }) => {
               onClick={() => handleFeatureToggle(feature.id)}
             >
               <svg className={styles.icon}>
-                {/* <use href={`./src/assets/icons/_sprite.svg#${feature.icon}`} /> */}
                 <use href={getIcon(feature.icon)} />
               </svg>
               {feature.label}
@@ -104,7 +103,6 @@ const FilterBar = ({ onFilterApply }) => {
                 onClick={() => handleVehicleTypeChange(type.id)}
               >
                 <svg className={styles.icon}>
-                  {/* <use href={`./src/assets/icons/_sprite.svg#${type.icon}`} /> */}
                   <use href={getIcon(type.icon)} />
                 </svg>
                 {type.label}

@@ -8,7 +8,6 @@ const ReviewCard = ({ review }) => {
         key={index}
         className={`${styles.star} ${index < rating ? styles.filled : ""}`}
       >
-        {/* <use href={`../src/assets/icons/_sprite.svg#star`} /> */}
         <use href={getIcon("star")} />
       </svg>
     ));

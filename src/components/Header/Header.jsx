@@ -8,7 +8,6 @@ const Header = () => {
       <div className={styles.container}>
         <NavLink to="/" className={styles.logo}>
           <svg className={styles.logoIcon}>
-            {/* <use href="../src/assets/icons/_sprite.svg#logo"></use> */}
             <use href={getIcon("logo")}></use>
           </svg>
         </NavLink>
