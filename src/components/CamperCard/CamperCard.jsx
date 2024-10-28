@@ -67,7 +67,8 @@ const CamperCard = ({ camper }) => {
                   height="16"
                   viewBox="0 0 16 16"
                 >
-                  <use href="./src/assets/icons/_sprite.svg#star" />
+                  {/* <use href="./src/assets/icons/_sprite.svg#star" /> */}
+                  <use href={getIcon("star")} />
                 </svg>
               </div>
               <p className={styles.ratingValue}>{camper.rating}</p>
@@ -76,7 +77,8 @@ const CamperCard = ({ camper }) => {
               </p>
             </div>
             <svg width="16" height="16" viewBox="0 0 16 16">
-              <use href="./src/assets/icons/_sprite.svg#map" />
+              {/* <use href="./src/assets/icons/_sprite.svg#map" /> */}
+              <use href={getIcon("map")} />
             </svg>
             <p>{camper.location}</p>
           </div>
@@ -90,7 +92,8 @@ const CamperCard = ({ camper }) => {
                   <div key={feature.id} className={styles.feature}>
                     <svg className={styles.icon}>
                       <use
-                        href={`./src/assets/icons/_sprite.svg#${feature.icon}`}
+                        // href={`./src/assets/icons/_sprite.svg#${feature.icon}`}
+                        href={getIcon(feature.icon)}
                       />
                     </svg>
                     <p>{feature.label}</p>
@@ -100,11 +103,16 @@ const CamperCard = ({ camper }) => {
               <div className={styles.transmission}>
                 <svg className={styles.icon}>
                   <use
-                    href={`./src/assets/icons/_sprite.svg#${
+                    // href={`./src/assets/icons/_sprite.svg#${
+                    //   VEHICLE_TRANSMISSIONS.find(
+                    //     (e) => e.id === camper.transmission
+                    //   )?.icon || VEHICLE_TRANSMISSIONS[0].icon
+                    // }`}
+                    href={getIcon(
                       VEHICLE_TRANSMISSIONS.find(
                         (e) => e.id === camper.transmission
                       )?.icon || VEHICLE_TRANSMISSIONS[0].icon
-                    }`}
+                    )}
                   />
                 </svg>
                 <p>
@@ -118,10 +126,14 @@ const CamperCard = ({ camper }) => {
               <div className={styles.engine}>
                 <svg className={styles.icon}>
                   <use
-                    href={`./src/assets/icons/_sprite.svg#${
+                    // href={`./src/assets/icons/_sprite.svg#${
+                    //   VEHICLE_ENGINES.find((e) => e.id === camper.engine)
+                    //     ?.icon || VEHICLE_ENGINES[0].icon
+                    // }`}
+                    href={getIcon(
                       VEHICLE_ENGINES.find((e) => e.id === camper.engine)
                         ?.icon || VEHICLE_ENGINES[0].icon
-                    }`}
+                    )}
                   />
                 </svg>
                 <p>
