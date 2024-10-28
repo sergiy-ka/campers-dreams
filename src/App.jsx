@@ -5,6 +5,7 @@ import Header from "./components/Header/Header";
 import HomePage from "./pages/HomePage/HomePage";
 import CatalogPage from "./pages/CatalogPage/CatalogPage";
 import DetailPage from "./pages/DetailPage/DetailPage";
+import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
               <Route path="/" element={<HomePage />} />
               <Route path="/catalog" element={<CatalogPage />} />
               <Route path="/catalog/:id" element={<DetailPage />} />
+              <Route path="*" element={<NotFoundPage />} />
             </Routes>
           </main>
         </div>
