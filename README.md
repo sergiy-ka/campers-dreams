@@ -1,12 +1,12 @@
-# CampersDreams - TravelTrucks Application
+# CampersDreams Application
 
-![TravelTrucks Banner](./src/assets/img/hero/hero.jpg)
+![CampersDreams Banner](./src/assets/img/hero/hero.jpg)
 
-## About TravelTrucks
+## About CampersDreams
 
-TravelTrucks is your premier destination for camper van and RV rentals. We specialize in providing high-quality, well-maintained recreational vehicles that turn your travel dreams into reality. Whether you're planning a weekend getaway or a cross-country adventure, our diverse fleet of campers offers the perfect blend of comfort and mobility.
+CampersDreams is your premier destination for camper van and RV rentals. We specialize in providing high-quality, well-maintained recreational vehicles that turn your travel dreams into reality. Whether you're planning a weekend getaway or a cross-country adventure, our diverse fleet of campers offers the perfect blend of comfort and mobility.
 
-### Why Choose TravelTrucks?
+### Why Choose CampersDreams?
 
 - **Diverse Fleet**: From compact vans to luxury RVs, find the perfect vehicle for your journey
 - **Quality Assured**: All vehicles undergo rigorous maintenance checks
@@ -120,7 +120,5 @@ https://66b1f8e71ca8ad33d4f5f63e.mockapi.io/campers
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Contact
-
-TravelTrucks - [info@traveltrucks.com](mailto:info@traveltrucks.com)
 
 Project Link: [https://github.com/sergiy-ka/campers-dreams](https://github.com/sergiy-ka/campers-dreams)
