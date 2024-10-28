@@ -263,7 +263,7 @@
   padding: 12px 18px;
   align-items: center;
   border-radius: 100px;
-  background: var(--Badges, #f2f4f7);
+  background: #f2f4f7;
   mix-blend-mode: multiply;
 }
 
@@ -277,7 +277,7 @@
 .feature .label,
 .transmission .label,
 .engine .label {
-  color: var(--Main, #101828);
+  color: var(--main);
   text-align: center;
   font-size: 16px;
   font-style: normal;

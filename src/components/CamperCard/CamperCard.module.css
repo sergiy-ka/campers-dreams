@@ -85,7 +85,7 @@
 }
 
 .title {
-  color: var(--Main, #101828);
+  color: var(--main);
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
@@ -105,7 +105,7 @@
 }
 
 .price {
-  color: var(--Main, #101828);
+  color: var(--main);
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
@@ -116,7 +116,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  color: var(--Main, #101828);
+  color: var(--main);
   margin-bottom: 16px;
 }
 
@@ -124,7 +124,7 @@
   display: flex;
   gap: 2px;
   align-items: center;
-  color: var(--Main, #101828);
+  color: var(--main);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -147,7 +147,7 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
   overflow: hidden;
-  color: var(--Text, #475467);
+  color: #475467;
   text-overflow: ellipsis;
   font-size: 16px;
   font-style: normal;
@@ -185,7 +185,7 @@
   padding: 12px 18px;
   align-items: center;
   border-radius: 100px;
-  background: var(--Badges, #f2f4f7);
+  background: #f2f4f7;
   mix-blend-mode: multiply;
 }
 
@@ -199,7 +199,7 @@
 .feature .label,
 .transmission .label,
 .engine .label {
-  color: var(--Main, #101828);
+  color: var(--main);
   text-align: center;
   font-size: 16px;
   font-style: normal;
